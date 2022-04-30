@@ -29,9 +29,7 @@ font-size: 20px;
 p span{
     display: block;
 }
-p span:hover{
-    transform: scale(1.1);
-}
+
 header{
     grid-area: header;
     
@@ -78,6 +76,8 @@ main{
 }
 .sanracampeon{
     width: 800px;
+    border: 10px solid gold;
+    border-radius: 25px;
 
 }
 footer{
