@@ -1,0 +1,101 @@
+@import "utilities/grid";
+@import "utilities/mixins";
+/*reset*/
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.tituloIndex{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 20px blue,
+    1px 1px 20px blue,
+    1px 1px 40px blue;
+}
+.sectionIndex1{
+grid-area: section;
+background-color: #fff6e3;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+}
+p{
+    span{
+        display: block;
+    }
+}
+header{
+    grid-area: header;
+    
+}
+main{
+    grid-area: main;
+    background-color: rgb(132, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloJugadores{
+    @include titulos;
+}
+.tituloTitulos{
+    @include titulos;
+}
+.tituloPlanteles{
+    @include titulos;
+}
+.sanracampeon{
+    width: 800px;
+    border: 10px solid gold;
+    border-radius: 25px;
+
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .txtFooter{
+        color: white;
+        font-size: 20px;
+        
+    }
+}
+.navbar{
+    background-color: #fff6e3;
+}
+.logo{
+    width: 150px
+}
+.navbar-light{
+    .navbar-nav{
+        .nav-link{
+            margin: 20px;
+            font-size: 25px;
+            font-weight: bold;
+            &:hover{
+                transform: scale(1.1);
+                transition: 0.4s all;
+            }
+        }
+    }  
+}
+@media only screen and (max-width: 480px){
+    .sanracampeon{
+        width: 400px;
+    }
+    .tituloIndex{
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .sectionIndex1{
+        font-size: 15px;
+    }
+}

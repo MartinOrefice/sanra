@@ -1,151 +1,123 @@
-*{
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
-}
+.containerIndex {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr 3fr 0.2fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "section section section" "footer footer footer"; }
 
-.containerIndex{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 0.5fr 4fr 3fr 0.2fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header"
-                            "main main main"
-                        "section section section"
-                         "footer footer footer";
+.containerHistoria {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr 0.2fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-}
-.sectionIndex1{
-grid-area: section;
-background-color: #fff6e3;
-color: black;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
-font-weight: bold;
-font-size: 20px;
-}
-p span{
-    display: block;
-}
+.containerTitulos {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 2fr 0.2fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-header{
-    grid-area: header;
-    
-}
-main{
-    grid-area: main;
-    background-color: rgb(132, 33, 33);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+.containerPlanteles {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 2fr 0.2fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-.tituloIndex{
-    color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
-    text-shadow: 1px 1px 20px blue,
-    1px 1px 20px blue,
-    1px 1px 40px blue;
-}
-.tituloJugadores{
-    color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
-}
-.tituloTitulos{
-    color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
-}
-.tituloPlanteles{
-    color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
-}
-.containerHistoria{
-    height: 100vh;
-    display: grid;
-    grid-template-rows: 0.5fr 4fr 0.2fr;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas: "header header header"
-                            "main main main"
-                         "footer footer footer";
-}
-.sanracampeon{
-    width: 800px;
-    border: 10px solid gold;
-    border-radius: 25px;
+.containerJugadores {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 0.5fr 2fr 0.2fr;
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
 
-}
-footer{
-    grid-area: footer;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.txtFooter{
+/*reset*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+.tituloIndex {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 1px 20px blue, 1px 1px 20px blue, 1px 1px 40px blue; }
+
+.sectionIndex1 {
+  grid-area: section;
+  background-color: #fff6e3;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px; }
+
+p span {
+  display: block; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main;
+  background-color: #842121;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tituloJugadores {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold; }
+
+.tituloTitulos {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold; }
+
+.tituloPlanteles {
+  color: whitesmoke;
+  text-align: center;
+  font-weight: bold; }
+
+.sanracampeon {
+  width: 800px;
+  border: 10px solid gold;
+  border-radius: 25px; }
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  footer .txtFooter {
     color: white;
-    font-size: 20px;
-    
-}
-.navbar{
-    background-color: #fff6e3;
-}
-.logo{
-    width: 150px
-}
+    font-size: 20px; }
 
-.navbar-light .navbar-nav .nav-link{
-    
-    margin: 20px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.nav-link:hover{
+.navbar {
+  background-color: #fff6e3; }
+
+.logo {
+  width: 150px; }
+
+.navbar-light .navbar-nav .nav-link {
+  margin: 20px;
+  font-size: 25px;
+  font-weight: bold; }
+  .navbar-light .navbar-nav .nav-link:hover {
     transform: scale(1.1);
-    transition: 0.4s all;
-}
+    transition: 0.4s all; }
 
-.containerJugadores{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 2fr 0.2fr;
-    grid-template-areas: "header header header"
-                            "main main main"
-                        "footer footer footer";
-}
-.containerPlanteles{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 2fr 0.2fr;
-    grid-template-areas: "header header header"
-                            "main main main"
-                        "footer footer footer";
-}
-.containerTitulos{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 2fr 0.2fr;
-    grid-template-areas: "header header header"
-                            "main main main"
-                        "footer footer footer";
-}
-@media only screen and (max-width: 480px){
-    .sanracampeon{
-        width: 400px;
-    }
-    .tituloIndex{
-        color: whitesmoke;
-        font-size: 20px;
-    }
-    .sectionIndex1{
-        font-size: 15px;
-    }
-}
+@media only screen and (max-width: 480px) {
+  .sanracampeon {
+    width: 400px; }
+  .tituloIndex {
+    color: whitesmoke;
+    font-size: 20px; }
+  .sectionIndex1 {
+    font-size: 15px; } }
