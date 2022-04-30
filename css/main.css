@@ -3,14 +3,31 @@
     margin: 0%;
     box-sizing: border-box;
 }
-body{
+
+.containerIndex{
     height: 100vh;
     display: grid;
-    grid-template-rows: 0.5fr 4fr 0.5fr;
+    grid-template-rows: 0.5fr 4fr 3fr 0.5fr;
     grid-template-columns: 0.2fr 7.5fr 0.8fr;
     grid-template-areas: "header header header"
-                        "main main main"
+                            "main main main"
+                        "section section section"
                          "footer footer footer";
+
+}
+.sectionIndex1{
+grid-area: section;
+background-color: #fff6e3;
+color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-weight: bold;
+font-size: 20px;
+}
+p span{
+    display: block;
 }
 header{
     grid-area: header;
@@ -23,6 +40,21 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.tituloIndex{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+.containerHistoria{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.5fr;
+    grid-template-columns: 0.2fr 7.5fr 0.8fr;
+    grid-template-areas: "header header header"
+                            "main main main"
+                         "footer footer footer";
 }
 .sanracampeon{
     width: 800px;
@@ -41,7 +73,7 @@ footer{
     
 }
 .navbar{
-    background-color: rgb(255, 255, 255);
+    background-color: #fff6e3;
 }
 .logo{
     width: 150px
@@ -53,9 +85,19 @@ footer{
     font-size: 25px;
     font-weight: bold;
 }
+.nav-link:hover{
+    transform: scale(1.1);
+}
 
 @media only screen and (max-width: 480px){
     .sanracampeon{
         width: 400px;
+    }
+    .tituloIndex{
+        color: whitesmoke;
+        font-size: 20px;
+    }
+    .sectionIndex1{
+        font-size: 15px;
     }
 }
