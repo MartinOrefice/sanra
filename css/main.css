@@ -1,0 +1,61 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.5fr;
+    grid-template-columns: 0.2fr 7.5fr 0.8fr;
+    grid-template-areas: "header header header"
+                        "main main main"
+                         "footer footer footer";
+}
+header{
+    grid-area: header;
+    
+}
+main{
+    grid-area: main;
+    background: rgb(255,0,198);
+    background: linear-gradient(90deg, rgba(255,0,198,1) 0%, rgba(121,9,88,1) 26%, rgba(121,9,88,1) 45%, rgba(88,32,210,1) 72%, rgba(12,0,255,1) 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sanracampeon{
+    width: 800px;
+
+}
+footer{
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.txtFooter{
+    color: white;
+    font-size: 20px;
+    
+}
+.navbar{
+    background-color: rgb(255, 255, 255);
+}
+.logo{
+    width: 150px
+}
+
+.navbar-light .navbar-nav .nav-link{
+    
+    margin: 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 480px){
+    .sanracampeon{
+        width: 400px;
+    }
+}
