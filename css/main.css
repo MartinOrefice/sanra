@@ -7,8 +7,8 @@
 .containerIndex{
     height: 100vh;
     display: grid;
-    grid-template-rows: 0.5fr 4fr 3fr 0.5fr;
-    grid-template-columns: 0.2fr 7.5fr 0.8fr;
+    grid-template-rows: 0.5fr 4fr 3fr 0.2fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
                             "main main main"
                         "section section section"
@@ -29,14 +29,16 @@ font-size: 20px;
 p span{
     display: block;
 }
+p span:hover{
+    transform: scale(1.1);
+}
 header{
     grid-area: header;
     
 }
 main{
     grid-area: main;
-    background: rgb(255,0,198);
-    background: linear-gradient(90deg, rgba(255,0,198,1) 0%, rgba(121,9,88,1) 26%, rgba(121,9,88,1) 45%, rgba(88,32,210,1) 72%, rgba(12,0,255,1) 94%);
+    background-color: rgb(132, 33, 33);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,12 +48,30 @@ main{
     color: whitesmoke;
     text-align: center;
     font-weight: bold;
+    text-shadow: 1px 1px 20px blue,
+    1px 1px 20px blue,
+    1px 1px 40px blue;
+}
+.tituloJugadores{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+.tituloTitulos{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
+}
+.tituloPlanteles{
+    color: whitesmoke;
+    text-align: center;
+    font-weight: bold;
 }
 .containerHistoria{
     height: 100vh;
     display: grid;
-    grid-template-rows: 0.5fr 4fr 0.5fr;
-    grid-template-columns: 0.2fr 7.5fr 0.8fr;
+    grid-template-rows: 0.5fr 4fr 0.2fr;
+    grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "header header header"
                             "main main main"
                          "footer footer footer";
@@ -87,8 +107,36 @@ footer{
 }
 .nav-link:hover{
     transform: scale(1.1);
+    transition: 0.4s all;
 }
 
+.containerJugadores{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.2fr;
+    grid-template-areas: "header header header"
+                            "main main main"
+                        "footer footer footer";
+}
+.containerPlanteles{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.2fr;
+    grid-template-areas: "header header header"
+                            "main main main"
+                        "footer footer footer";
+}
+.containerTitulos{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 2fr 0.2fr;
+    grid-template-areas: "header header header"
+                            "main main main"
+                        "footer footer footer";
+}
 @media only screen and (max-width: 480px){
     .sanracampeon{
         width: 400px;
