@@ -37,7 +37,8 @@
 * {
   padding: 0%;
   margin: 0%;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif; }
 
 .tituloIndex {
   color: whitesmoke;
@@ -56,18 +57,22 @@
   font-weight: bold;
   font-size: 20px; }
 
-p span {
-  display: block; }
+p {
+  font-weight: bold; }
+  p span {
+    display: block; }
 
 header {
   grid-area: header; }
 
 main {
   grid-area: main;
-  background-color: #842121;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  background-image: url("../img/WhatsApp Image 2022-04-30 at 12.11.13 AM.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .tituloJugadores {
   color: whitesmoke;
