@@ -1,37 +1,66 @@
-.containerIndex {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 0.5fr 4fr 3fr 0.2fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "main main main" "section section section" "footer footer footer"; }
-
 .containerHistoria {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.2fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header" "mainH mainH mainH" "footer footer footer"; }
+
+.mainH {
+  grid-area: mainH;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: brown;
+  flex-direction: column; }
+
+.tituloH {
+  font-weight: bold;
+  color: white; }
 
 .containerTitulos {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 2fr 0.2fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header" "mainT mainT mainT" "footer footer footer"; }
+
+.mainT {
+  grid-area: mainT;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: brown;
+  flex-direction: column; }
 
 .containerPlanteles {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 2fr 0.2fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header" "mainP mainP mainP" "footer footer footer"; }
+
+.mainP {
+  grid-area: mainP;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: brown;
+  flex-direction: column; }
 
 .containerJugadores {
   height: 100vh;
   display: grid;
+  grid-template-rows: 0.5fr 4fr 0.2fr;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 0.5fr 2fr 0.2fr;
-  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
+  grid-template-areas: "header header header" "mainJ mainJ mainJ" "footer footer footer"; }
+
+.mainJ {
+  grid-area: mainJ;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: brown;
+  flex-direction: column; }
 
 /*reset*/
 * {
@@ -39,6 +68,13 @@
   margin: 0%;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
+
+.containerIndex {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 0.5fr 4fr 3fr 0.2fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "header header header" "main main main" "section section section" "footer footer footer"; }
 
 .tituloIndex {
   color: whitesmoke;
@@ -65,7 +101,7 @@ p {
 header {
   grid-area: header; }
 
-main {
+.mainI {
   grid-area: main;
   display: flex;
   justify-content: center;
