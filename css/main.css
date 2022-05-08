@@ -135,10 +135,14 @@ footer {
   background-color: black;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  text-align: center; }
   footer .txtFooter {
     color: white;
     font-size: 20px; }
+
+.creditos {
+  display: block; }
 
 .navbar {
   background-color: #fff6e3; }
