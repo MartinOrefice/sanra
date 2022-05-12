@@ -3,7 +3,7 @@
     height: 100vh;
     display: grid;
     grid-template-rows: 0.5fr 4fr 0.2fr;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header header"
                             "mainH mainH mainH"
                          "footer footer footer";
@@ -11,7 +11,7 @@
 .mainH{
     grid-area: mainH;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: brown;
     flex-direction: column;
@@ -19,4 +19,23 @@
 .tituloH{
     font-weight: bold;
     color: white;
+    
+}
+
+.contenedor-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.contenedor-parrafo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
 }
